@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUS PASS APPLICATION</title>
+</head>
+<body>
+    <center><img src="./pass.png" width="1000" height="100"></center>
+    <form method="get">
+        <fieldset>
+            <legend><b><u>Applicant Details</u></b></legend>
+            <label for="name">Name*</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" pattern="[abc]{4,20}" title="maximum characters:20" name="username"  required >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <label for="name">Father's / Guardian's Name*</label> <input type="text" pattern="[abc]{4,20}" title="maximum characters:20" name="username" required> <br><br>
+            <label for="date">Date of birth*</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="birthday" id="birthday" required> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="gender">Gender*</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gender" id="male" required><label for="male">Male</label> <input type="radio" name="gender" id="male" required><label for="Female">Female</label><br><br>
+            <label for="number">Whatpp No*</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" pattern="\+91[6789][0-9{9}]" name="enter number" required >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="Aadhaar No">Aadhaar No*</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" pattern="[0-9]" name="number"  required> <br><br>
+            <label for="my file">Photo*</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="file" name="" id="my file" required><label for="mail">E-mail Id</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" pattern="@" name="mail" required>
+        </fieldset><br>
+        <fieldset>
+            <legend><b><u>Residential Address Details</u></b></legend>
+            <label for="Address">Applicant's Address*</label>
+            <TEXTAREA rows="2" cols="15" name="content field"></TEXTAREA>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="district">District*</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select id="district">
+            <option value="hyderabad">Hyderabad</option>
+            <option value="ADILABAD">ADILABAD</option>
+            <option value="WARANGAL">WARANGAL</option>
+            <option value="	RANGAREDDY">RANGAREDDY</option>
+            <option value="NIZAMABAD">NIZAMABAD</option>
+            <option value="NALGONDA">NALGONDA</option>
+            <option value="MAHABUBNAGAR">MAHABUBNAGAR</option>
+            <option value="KARIMNAGAR">KARIMNAGAR</option>
+            <option value="KHAMMAM">KHAMMAM</option>
+            <option value="MEDAK"></option>
+            </select><br><br>
+            <label for="mandal">Mandal*</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select id="district">
+                <option value="hyderabad">Hyderabad</option>
+            </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="village">Village*</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select id="village">village
+                <option value="hyderabad">Hyderabad</option>
+            </select><br><br>
+            <label for="pincode">Pincode*</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="pincode" required>
+        </fieldset><br>
+        <fieldset>
+            <legend><b><u>Pass Type Details</u></b></legend>
+            <label for="city">City*</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select id="payment mode">
+                <option value="payment">select payment mode </option>
+            </select><br><br>
+            <label for="pass">Pass Type*</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select id="payment mode">
+                <option value="Pass type">----select----</option>
+            </select>
+        </fieldset><br>
+        <fieldset>
+            <legend><b><u>Mode of Payment & Pass Collection</u></b></legend>
+            <label for="Payment">Payment Mode*</label>
+            <select id="payment mode">
+                <option value="Passment">select Passment Mode </option>
+            </select><br><br>
+            <label for="Pass">Pass Delivery Mode*</label>
+            <select id="payment mode">
+                <option value="Passment">select Pass Delivery Mode </option>
+            </select><br><br>
+            <label for="Pass">Center at which you want to Collect Pass*</label>
+            <select id="pass">
+                <option value="Passment">----select---- </option>
+            </select>
+        </fieldset>
+    </form>
+    <center>
+        <img src="./code.png" width="300"><br>
+        <button>Submit</button>
+    </center>
+
+
+    
+</body>
+</html>
+
+            
+
+            
